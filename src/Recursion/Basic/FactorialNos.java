@@ -7,12 +7,12 @@ public class FactorialNos {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         int n = in.nextInt();
-//        ArrayList<Integer> ans = getFactorial(n);
+        ArrayList<Integer> ans = getFactorial(n);
 
         int result = NormalFactorial(n);
 
-//        System.out.println(ans);
-        System.out.println(result);
+        System.out.println(ans);
+//        System.out.println(result);
 
     }
     static ArrayList<Integer> getFactorial(int n) {
