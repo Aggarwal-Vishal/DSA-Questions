@@ -7,8 +7,24 @@ public class MajorityElement {
     public static void main(String[] args) {
         int[] nums = {2,2,1,1,1,2,1};
 //        int ans = majority(nums);
-        System.out.println(majority(nums));
+        System.out.println(element(nums));
 
+    }
+
+    static int element(int[] nums){
+        for(int num : nums){
+            int count = 0;
+            for(int i : nums){
+                if(i == num){
+                    count++;
+                }
+            }
+            if(count > nums.length / 2){
+                return num;
+            }
+
+        }
+        return -1;
     }
 
     static int majority(int[] nums){

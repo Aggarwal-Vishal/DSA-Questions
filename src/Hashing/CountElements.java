@@ -27,11 +27,5 @@ public class CountElements {
             int number = in.nextInt();
             System.out.println("The number has occured " + hash[number] + " time");
         }
-
-
-
-
     }
-
-
 }
